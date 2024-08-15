@@ -66,6 +66,8 @@ export default function JiujitsuPage() {
           </TableBody>
         </Table>
 
+        
+
         <Button>Agende agora!</Button>
       </article>
     </>
