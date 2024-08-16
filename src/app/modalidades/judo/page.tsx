@@ -1,67 +1,81 @@
-import { Table, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Button } from "flowbite-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeadCell,
+  TableRow,
+} from 'flowbite-react'
+import { Button } from 'flowbite-react/components/Button'
 
-export default function JudoPage() {
-    return (
-        <>
-        <article>
-          <h1>Judo</h1>
-          <section>
-            <p>
-              O Jiu-Jitsu Brasileiro é uma arte marcial e esporte de combate que
-              se originou no Brasil, a partir do judô e das técnicas de luta do
-              Jiu-Jitsu japonês. Ele foi popularizado pela família Gracie, que
-              adaptou e refinou as técnicas de chão, focando em alavancas e
-              submissões, tornando possível que um lutador menor e mais fraco
-              pudesse vencer um adversário maior e mais forte.
-            </p>
-            <p>
-              {' '}
-              O Jiu-Jitsu é conhecido por seu foco em técnicas de grappling, como
-              estrangulamentos, chaves de braço e de perna, além de controle de
-              posições. Diferente de outras artes marciais que priorizam golpes, o
-              Jiu-Jitsu é predominantemente uma luta no solo, onde a técnica e a
-              estratégia são cruciais para o sucesso.
-            </p>
-            <p>
-              {' '}
-              Além de ser uma forma eficaz de defesa pessoal, o Jiu-Jitsu oferece
-              inúmeros benefícios à saúde. Praticar essa arte marcial melhora a
-              resistência cardiovascular, a força muscular, a flexibilidade e a
-              coordenação motora. Além disso, é uma excelente maneira de aliviar o
-              estresse, aumentar a autoconfiança e promover disciplina.
-            </p>
-            <p>
-              {' '}
-              Se você está interessado em experimentar essa arte marcial
-              transformadora, inscreva-se agora para uma aula experimental
-              gratuita no Centro de Treinamento Evolução! Essa é a sua chance de
-              conhecer o Jiu-Jitsu de perto e descobrir como ele pode mudar sua
-              vida.
+export default function JiujitsuPage() {
+  return (
+    <>
+      <article className="flex flex-row gap-8">
+        <div className="flex-1">
+          <h1>Judô</h1>
+          <section className="">
+            <p>Judô é uma arte marcial e esporte olímpico originado no Japão,
+            criado pelo mestre Jigoro Kano em 1882. Baseado em técnicas de
+            projeção e imobilização, o Judô enfatiza o uso eficiente da força e
+            a aplicação de alavancas para derrubar ou subjugar o oponente. O
+            nome "Judô" significa "caminho suave", refletindo a filosofia de
+            usar a força do adversário contra ele mesmo.</p>
+            <p> Os benefícios do Judô
+            são amplos, tanto no aspecto físico quanto mental. Fisicamente, a
+            prática regular melhora a força muscular, a flexibilidade, a
+            coordenação motora e a resistência cardiovascular. Além disso, o
+            Judô desenvolve o equilíbrio, a agilidade e a capacidade de resposta
+            rápida, tornando-o uma excelente atividade para pessoas de todas as
+            idades.</p>
+            <p> No aspecto mental, o Judô promove a disciplina, o respeito e
+            a perseverança. Os praticantes aprendem a lidar com desafios e
+            adversidades de maneira controlada e estratégica, o que fortalece a
+            resiliência emocional e a confiança. A filosofia do Judô também
+            ensina a importância do respeito aos colegas e adversários,
+            cultivando valores de humildade e cooperação.</p>
+            <p> Se você está
+            interessado em experimentar os benefícios do Judô, inscreva-se agora
+            para uma aula experimental gratuita no Centro de Treinamento
+            Evolução! Venha conhecer essa arte marcial que não só fortalece o
+            corpo, mas também molda o caráter, e descubra como o Judô pode fazer
+            parte do seu caminho de evolução.
             </p>
           </section>
-  
+        </div>
+
+        <section className="flex-1">
           <h2>Horários!</h2>
           <Table>
             <TableHead>
-              <TableHeadCell>Segunda-feira</TableHeadCell>
               <TableHeadCell>Terça-feira</TableHeadCell>
-              <TableHeadCell>Quarta-feira</TableHeadCell>
               <TableHeadCell>Quinta-feira</TableHeadCell>
             </TableHead>
             <TableBody className="divide-y">
               <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                <TableCell>21:00</TableCell>
-                <TableCell>20:00</TableCell>
-                <TableCell>21:00</TableCell>
-                <TableCell>20:00</TableCell>
+                <TableCell>19:00</TableCell>
+                <TableCell>19:00</TableCell>
               </TableRow>
             </TableBody>
           </Table>
-  
-          
-  
-          <Button>Agende agora!</Button>
-        </article>
-      </>
-    )
+
+          <h2>Horários kids!</h2>
+          <Table>
+            <TableHead>
+              <TableHeadCell>Terça-feira</TableHeadCell>
+              <TableHeadCell>Quinta-feira</TableHeadCell>
+            </TableHead>
+            <TableBody className="divide-y">
+              <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                <TableCell>18:00</TableCell>
+                <TableCell>18:00</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </section>
+      </article>
+
+      <Button>Agende agora!</Button>
+    </>
+  )
 }

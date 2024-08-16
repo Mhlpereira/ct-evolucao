@@ -1,8 +1,9 @@
 import CardProf from "@/components/cardProf"
+import Link from "next/link"
 
 
-async function getAllData(){
-    const response = fetch('') // caminho do mock utilizando o json server
+async function getAllProfessores(){ 
+    const response = fetch('mockdata/db.json') // caminho do mock utilizando o json server
     if(!response.ok){
         console.log("falha na conexão do db")
     }
@@ -10,11 +11,15 @@ async function getAllData(){
 }
 
 export default async function ProfessoresPage() {
-    const data = await getAllData()
+    const data = await getAllProfessores()
   return (
     <>
       <div>Professores</div>
-      {data.map(data => <CardProf data={data}/>}
+      <Link > // decidir se vai ser modal ou criar uma página.
+      <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {data.map(data => <CardProf key={data.id} data={data}/>}
+      </section>
+      </Link>
     </>
   )
 }

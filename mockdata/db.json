@@ -2,15 +2,17 @@
     "professor" :[ {
         "id" : 1,
         "name" : "wellington",
+        "slug" : "wellingtonjiu",
         "modalidades" : [
             "jiu jitsu",
-            "teste"
+            "kids"
         ],
         "imageSrc": "cloudnary"
     },
     {
         "id" : 2,
         "name" : "Jeff",
+        "slug" : "jefftay",
         "modalidades" : [
             "jiu jitsu",
             "Muy Thay",

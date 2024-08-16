@@ -11,7 +11,7 @@ import Link from 'next/link'
 export default function HeaderUI() {
   return (
     <Navbar fluid rounded className="bg-slate-500">
-      <NavbarBrand>
+      <NavbarBrand as={Link} href='/'>
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           CT-EVOLUCAO
         </span>
