@@ -12,11 +12,14 @@
     "dotenv": "^16.4.5",
     "flowbite-react": "^0.10.1",
     "json-server": "^1.0.0-beta.1",
+    "logger": "^0.0.1",
+    "mongoose": "^8.5.3",
     "next": "14.2.5",
     "next-cloudinary": "^6.10.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.2.1"
+    "react-icons": "^5.2.1",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

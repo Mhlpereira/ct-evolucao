@@ -13,7 +13,7 @@ export default function JiujitsuPage() {
     <>
       <article className="flex flex-row gap-8">
         <div className="flex-1">
-          <h1>Jiu-jitsu</h1>
+          <h1>Muy thay</h1>
           <section className="">
             <p>
               Muay Thai é uma arte marcial originária da Tailândia, conhecida

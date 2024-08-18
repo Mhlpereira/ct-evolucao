@@ -1,4 +1,4 @@
-import CardProf from "@/components/cardProf"
+import CardProf from "@/components/common/cardProf"
 import Link from "next/link"
 
 
