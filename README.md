@@ -11,8 +11,9 @@ Modelo adotado MVC
 Tecnologias utilizadas até o momento.
 
 - NextJs
-- MongoDB
-- Moongose ODM
+- PostgresDB
+- Prisma ORM
+- Docker
 - Tailwind Css
 - Cloudnary
 - Json Server 

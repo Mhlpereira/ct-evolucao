@@ -11,7 +11,7 @@ export class AdmModel implements CRUDmodel<UserType> {
         password: string
         role: Role
     }): Promise<string | number> {
-        const salt =  makeStr(8)
+        const salt =  makeStr(8) // evitar que o hash seja duplicado e melhora a segurança
         const {id, name, email, phone, password, role} = data
         throw new Error("Method not implemented.");
     }
