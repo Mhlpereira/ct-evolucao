@@ -1,6 +1,6 @@
-import { Role } from "@/types/roleType";
+import { Role } from "@/app/types/roleType";
 import { CRUDmodel } from "./modeloCRUD";
-import { UserType } from "@/types/userType";
+import { UserType } from "@/app/types/userType";
 
 export class AdmModel implements CRUDmodel<UserType> {
     async create(data: {

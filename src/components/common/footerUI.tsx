@@ -20,7 +20,7 @@ import {
 
 export default function FooterUI() {
   return (
-    <Footer className='absolute inset-x-0 bottom-0'>
+    <Footer className='inset-x-0 bottom-0'>
       <div className="w-full h-8 bg-slate-600 sm:flex sm:items-center sm:justify-between ">
         <FooterCopyright
           href="https://www.linkedin.com/in/m%C3%A1rio-henrique/"

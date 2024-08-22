@@ -90,7 +90,7 @@ export default function JiujitsuPage() {
               </TableRow>
             </TableBody>
           </Table>
-          <figure className="flex flex-col gap-4 mt-5  lg:justify-center lg:flex-row ">
+          <figure className="flex flex-col gap-4 mt-5 items-center justify-center md:flex-row">
             <Image
               src={
                 'https://res.cloudinary.com/dk3stwpr5/image/upload/v1723778994/ok9to2j0615gnx47gb1u.png'

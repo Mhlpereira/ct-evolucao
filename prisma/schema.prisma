@@ -12,3 +12,54 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Aluno {
+  id        String    @id @default(uuid())
+  name      String
+  slug      String     @unique
+  email     String    @unique
+  phone     String
+  senha     String
+  createdOn DateTime? @default(now())
+  uptadeAt  DateTime  @updatedAt
+  status    Boolean
+  Aula      Aula[]
+
+  @@index(slug)
+}
+
+model Adm {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  phone     String
+  senha     String
+  createdOn DateTime @default(now())
+  updateAt  DateTime @updatedAt
+  status    Boolean
+}
+
+model Professor {
+  id        String    @id @default(uuid())
+  name      String
+  slug      String    @unique
+  email     String    @unique
+  celular     String
+  senha     String
+  avatar    String?
+  createdOn DateTime? @default(now())
+  updateAt  DateTime  @updatedAt
+  status    Boolean
+  aulas     Aula[]
+
+  @@index(slug)
+}
+
+model Aula {
+  id          String    @id @default(uuid())
+  professor   Professor @relation(fields: [professorSlug], references: [slug])
+  professorSlug String
+  Aluno       Aluno[]
+  createdOn   DateTime  @default(now())
+  updateAt    DateTime  @updatedAt
+}
