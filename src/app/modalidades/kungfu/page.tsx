@@ -1,11 +1,3 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeadCell,
-  TableRow,
-} from 'flowbite-react'
 import Image from 'next/image'
 
 export default function KungFuPage() {
@@ -32,7 +24,7 @@ export default function KungFuPage() {
 
             <section className="flex-1">
               <h2 className='font-bold'>Horários!</h2>
-              <Table>
+              {/* <Table>
                 <TableHead>
                   <TableHeadCell>Terça-feira</TableHeadCell>
                   <TableHeadCell>Quinta-feira</TableHeadCell>
@@ -43,7 +35,7 @@ export default function KungFuPage() {
                     <TableCell>20:00</TableCell>
                   </TableRow>
                 </TableBody>
-              </Table>
+              </Table> */}
               <figure className="flex flex-col gap-4 mt-5 items-center justify-center md:flex-row">
                 <Image
                   src={
